@@ -1,0 +1,9 @@
+  module funcion phi
+  use iso_fortran_env, only: wp => real64
+  implicit none
+contains
+  real(wp) function phi(x)
+    real(wp), intent(in) :: x
+    phi = 5.0_wp * (1.0_wp - exp(-x))
+  end function phi
+end module funcionphi
